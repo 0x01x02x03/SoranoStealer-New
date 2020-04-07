@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{1487DE1B-3B55-4DC8-A6A2-D403A4628103}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sorano</RootNamespace>
+    <AssemblyName>Sorano</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>Stealer.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-{F1EFF869-A621-40F9-8C73-915717731419}.cs" />
+    <Compile Include="ChromeRecovery\Account.cs" />
+    <Compile Include="ChromeRecovery\BCrypt.cs" />
+    <Compile Include="ChromeRecovery\Chromium.cs" />
+    <Compile Include="ChromeRecovery\SQLiteHandler.cs" />
+    <Compile Include="Class0.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class10.cs" />
+    <Compile Include="Class11.cs" />
+    <Compile Include="Class12.cs" />
+    <Compile Include="Class13.cs" />
+    <Compile Include="Class15.cs" />
+    <Compile Include="Class16.cs" />
+    <Compile Include="Class17.cs" />
+    <Compile Include="Class18.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Class20.cs" />
+    <Compile Include="Class21.cs" />
+    <Compile Include="Class22.cs" />
+    <Compile Include="Class23.cs" />
+    <Compile Include="Class24.cs" />
+    <Compile Include="Class25.cs" />
+    <Compile Include="Class26.cs" />
+    <Compile Include="Class27.cs" />
+    <Compile Include="Class28.cs" />
+    <Compile Include="Class3.cs" />
+    <Compile Include="Class30.cs" />
+    <Compile Include="Class31.cs" />
+    <Compile Include="Class32.cs" />
+    <Compile Include="Class33.cs" />
+    <Compile Include="Class34.cs" />
+    <Compile Include="Class4.cs" />
+    <Compile Include="Class6.cs" />
+    <Compile Include="Class7.cs" />
+    <Compile Include="Class8.cs" />
+    <Compile Include="Class9.cs" />
+    <Compile Include="NoiseMe\Drags\App\Data\SQLite\CNT.cs" />
+    <Compile Include="NoiseMe\Drags\App\Data\SQLite\FF.cs" />
+    <Compile Include="NoiseMe\Drags\App\Data\SQLite\ROW.cs" />
+    <Compile Include="NoiseMe\Drags\App\Data\SQLite\SZ.cs" />
+    <Compile Include="NoiseMe\Drags\App\Models\JSON\JavaScriptReader.cs" />
+    <Compile Include="NoiseMe\Drags\App\Models\JSON\JsonArray.cs" />
+    <Compile Include="NoiseMe\Drags\App\Models\JSON\JsonExt.cs" />
+    <Compile Include="NoiseMe\Drags\App\Models\JSON\JsonObject.cs" />
+    <Compile Include="NoiseMe\Drags\App\Models\JSON\JsonPrimitive.cs" />
+    <Compile Include="NoiseMe\Drags\App\Models\JSON\JsonType.cs" />
+    <Compile Include="NoiseMe\Drags\App\Models\JSON\JsonValue.cs" />
+    <Compile Include="NoiseMe\Drags\App\Models\LocalModels\Extensions\Nulls\IsNullExtension.cs" />
+    <Compile Include="NoiseMe\Drags\App\Models\LocalModels\Extensions\Strings\StringExtension.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stealer\LogPassData.cs" />
+    <Compile Include="Stealer\Program.cs" />
+    <Compile Include="who\Dirs.cs" />
+    <Compile Include="who\Gecko\Gecko1.cs" />
+    <Compile Include="who\Gecko\Gecko2.cs" />
+    <Compile Include="who\Gecko\Gecko3.cs" />
+    <Compile Include="who\Gecko\Gecko4.cs" />
+    <Compile Include="who\Gecko\Gecko5.cs" />
+    <Compile Include="who\Gecko\Gecko6.cs" />
+    <Compile Include="who\Gecko\Gecko7.cs" />
+    <Compile Include="who\Gecko\Gecko8.cs" />
+    <Compile Include="who\Gecko\Gecko9.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.lSfgApatkdxsVcGcrktoFd.resources" />
+    <EmbeddedResource Include="Sorano.g.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
